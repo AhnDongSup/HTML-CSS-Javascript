@@ -118,7 +118,7 @@
 
 
 // // ##### HTML을 Javascript로 읽기
-// const title = document.getElementById("title"); //title이란 id를 가진 element찾기
+// const title = document.getElementById("title"); //title이란 id를 가진 element찾기(html element)
 // //document에서 항목을 가져오거나 항목을 변경할 수 있음
 
 // // console.dir(title);
