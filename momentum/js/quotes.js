@@ -1,16 +1,52 @@
 const quotes = [
     {
-        quoto: "아무런 소득이 없다면 객기이고 고집일뿐",
-        author: "어떤 할범",
+    quote: "Life has no limitations, except the ones you make.",
+    author: "Les Brown",
     },
     {
-        quoto: "asd",
-        author: "?",
-    }
-];
+    quote: "Life is a lively process of becoming.",
+    author: "Gen. Douglas MacArthur",
+    },
+    {
+    quote:
+    "Life is what happens while you are busy making other plans.",
+    author: "John Lennon",
+    },
+    {
+    quote: "All great changes are preceded by chaos.",
+    author: "Deepak Chopra",
+    },
+    {
+    quote: "Change alone is eternal, perpetual, immortal",
+    author: "Arthur Shopenhauer",
+    },
+    {
+    quote: "By changing nothing, nothing changes.",
+    author: "Tony Robbins",
+    },
+    {
+    quote: "Change is inevitable. Growth is optional.",
+    author: "John C. Maxwell",
+    },
+    {
+    quote: "Change your thinking, change your life.",
+    author: "Ernest Holmes",
+    },
+    {
+    quote: "Failure is not fatal, but failure to change might be.",
+    author: "John Wooden",
+    },
+    {
+    quote: "Nothing is forever except change.",
+    author: "Buddha",
+    },
+    ];
 
-const quoto = document.querySelector("#queto span:first-child");
-const author = document.querySelector("#queto span:last-child");
-
-console.log(quotes[0]); 
-// 4:05
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
+// round 반올림 
+// ceil 아예 올려서
+// floor 아예 내려서
