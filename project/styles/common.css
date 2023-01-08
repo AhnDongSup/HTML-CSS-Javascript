@@ -1,0 +1,84 @@
+@import url(normalize.css);
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+/* 변수 */
+:root {
+    --base-unit: 27px;
+    --container: 1296px;
+    --highlight-c: #9ac75b;
+    --highlight-dark-c: #55762c;
+    --text-c: #2c2c2c;
+    --light-text-c: #a8a8a8;
+    --light-txt: #6e6e6e;
+    --banner-c: #2d3e4f;
+    --light-c: #ebebeb;
+}
+
+/* 레이아웃 */
+.container {
+    width: var(--container);
+    margin: 0 auto;
+}
+.con_pd {
+    padding: calc(var(--base-unit) * 3) 0;
+}
+.con_pd {
+    padding-top: calc(var(--base-unit) * 3);
+}
+
+/* 제목 위계 */
+body {
+    /* font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 27px; */
+    font: 16px / var(--base-unit) 'Open Sans', sans-serif;
+    color: var(--text-c);
+}
+.banner_tt {
+    font-size: 55px;
+    line-height: calc(var(--base-unit) * 2);
+}
+.content_tt {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 300;
+}
+.link {
+    text-decoration: underline;
+    color: var(--highlight-c);
+}
+.content_desc {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* 컬러 */
+.highlight-bg {
+    background: var(--highlight-c);
+}
+.light-bg {
+    background: var(--light-c);
+}
+.light-txt {
+    color: var(--light-txt);
+}
+.highlight-txt {
+    color: var(--highlight-dark-c);
+}
+
+/* 링크, 버튼, 폼 */
+.btn {
+    border-radius: 4px;
+    line-height: 39px;
+    padding: 0 20px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.btn span {
+    line-height: 39px;
+    display: inline-block;
+    vertical-align: bottom;
+}
