@@ -195,7 +195,7 @@
 //     document.body.style.backgroundColor = "tomato";
 //     // h1 처럼 document 밑으로 가져올 순 없음
 //     // 여기서 document.title을 호출한다면, 위에 있는 title이 아닐 것임
-// }
+// } 사랑해 안동섭 
 
 // function handleWindowCopy() {
 //     alert("copier!");
@@ -210,7 +210,7 @@
 // }
 // // ##### event를 사용하는 방법 두가지
 // // 
-// // 첫번째 방법(첫번째 방법을 더 선호) - 나중에 removeEventListener를 통해서 event lis tener를 제거할 수 있기 때문
+// // 첫번째 방법(첫번째 방법을 더 선호) - 나중에 removeEventListener를 통해서 event listener를 제거할 수 있기 때문
 // // title.addEventListener("click", handleTitleClick);
 // // title.addEventListener("mouseenter", handleMouseEnter);
 // // 두번째 방법
