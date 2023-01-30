@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  background-color: gray;
+}
+article {
+  width: 580px;
+  height: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 15px 20px;
+}
+.fa {
+  background-color: #fff;
+  margin-top: 50px;
+  height: 150px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+h2 {
+  font-size: xx-large;
+}
+.box {
+  border: 5px solid #fff;
+}
+
+.box1 {
+  background-color: #ff6347;
+}
+.box2 {
+  background-color: #008080;
+}
+.box3 {
+  background-color: #deb887;
+}
+.box4 {
+  background-color: #d7bfd7;
+}

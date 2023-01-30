@@ -1,0 +1,52 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template: 100% 1fr / 15% 85%;
+  background-image: url('./images/peter-steiner-JSbb_z5sZEc-unsplash.jpg');
+  background-size: cover;
+}
+.navbar {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(-100%);
+  transition: all 0.3s linear;
+}
+.show-navbar {
+  transform: translate(0);
+}
+.btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  margin: 30px;
+  display: block;
+}
+a:hover {
+  color: tomato;
+}
+main {
+  text-align: center;
+  position: relative;
+}
+h1 {
+  font-size: 100px;
+  margin: 10px auto;
+}
+h2 {
+  font-size: 50px;
+  margin: 0 auto;
+}
+.phrase {
+  color: #fff;
+  margin: 0 0 50px 80px;
+  position: absolute;
+  bottom: 0;
+}

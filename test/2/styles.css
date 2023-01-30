@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: tomato;
+  margin: 150px auto;
+  border: 10px dashed black;
+}
+.box,
+.small {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border: 5px solid #fff;
+  margin: 70px auto;
+}
+
+.long {
+  width: 450px;
+  height: 100px;
+  background-color: green;
+  border: 5px dashed #fff;
+}

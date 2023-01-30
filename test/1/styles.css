@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-image: url(./images/peter-steiner-JSbb_z5sZEc-unsplash.jpg);
+}
+.container {
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: tomato;
+  margin: 150px auto; /*150px_위 아래 여백 지정, auto_좌우 여백을 가운데로 위치하게*/
+  text-align: center; /*글자위치*/
+}
+.image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+ul {
+  display: inline-block;
+  margin-left: -40px;
+  list-style-type: circle;
+}
+li {
+  margin-top: 10px;
+}
+
+li:hover {
+  color: #fff;
+}

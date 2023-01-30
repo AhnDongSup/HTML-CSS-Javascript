@@ -1,0 +1,63 @@
+body {
+  margin: 0px;
+  background-image: url('./images/peter-steiner-JSbb_z5sZEc-unsplash.jpg');
+}
+header {
+  width: 700px;
+  height: 400px;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+.img1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+.banner {
+  width: 500px;
+  height: 100px;
+  background-color: tomato;
+  margin: 0 auto;
+}
+p {
+  margin: 0;
+  padding: 10px;
+}
+article {
+  width: 680px;
+  height: 400px;
+  background-color: grey;
+  margin: 0 auto;
+  padding: 10px;
+}
+.section1 {
+  width: 650px;
+  height: 160px;
+  background-color: darkcyan;
+  padding: 15px;
+}
+.section2 {
+  margin-top: 10px;
+  width: 650px;
+  height: 160px;
+  background-color: darkcyan;
+  padding: 15px;
+}
+h2 {
+  margin: 0;
+}
+li {
+  margin-top: 20px;
+  list-style-image: url('./images/arrow-right.png');
+}
+li:hover {
+  list-style-image: url('./images/arrow-right\ \(2\).png');
+}
+.sectionimg1,
+.sectionimg2 {
+  width: 100px;
+  height: 100px;
+  float: right;
+}
