@@ -1,3 +1,5 @@
+choice_case = ['r', 's', 'p'];
+
 document.getElementById('r').addEventListener('click', () => {
   choiceItem('r');
 });
@@ -7,8 +9,6 @@ document.getElementById('s').addEventListener('click', () => {
 document.getElementById('p').addEventListener('click', () => {
   choiceItem('p');
 });
-
-choice_case = ['r', 's', 'p'];
 
 choiceItem = item => {
   const computerChoice = choice_case[Math.floor(Math.random() * 3)];
