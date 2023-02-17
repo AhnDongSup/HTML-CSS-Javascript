@@ -1,0 +1,95 @@
+/* CSS 작성 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.logo {
+  position: relative;
+  left: 10px;
+  align-self: center;
+}
+
+.logo > a {
+  display: block;
+  height: 56px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title > .text05 {
+  color: var(--clr-gray-1);
+}
+
+.title > span {
+  margin: 0 10px;
+}
+
+.container {
+  border: 1px solid var(--clr-gray-1);
+  padding: 10px;
+  margin: 0 auto;
+
+  width: calc(487.33px * 2 + 40px);
+  height: calc(311.33px + 322.33px + 40px);
+}
+
+.fa {
+  display: inline-block;
+  position: relative;
+  height: 311.33px;
+}
+
+.box01,
+.box02 {
+  margin: 6px;
+  height: 311.33px;
+}
+
+.fa > img {
+  padding: 20px;
+  margin: 0;
+  border: 1px solid var(--clr-gray-1);
+}
+
+.fa:hover,
+.fa:focus {
+  transition: all 1s;
+  border: 1px solid var(--clr-blue-2);
+}
+
+.btn {
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  background: var(--clr-gray-1);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover::before {
+  width: 110px;
+  height: 45px;
+  left: 0px;
+  color: #fff;
+  content: '구매하기 >';
+  background: var(--clr-blue-2);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

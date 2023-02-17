@@ -1,8 +1,6 @@
 * {
-  font-family: 'Noto Sans KR', sans-serif;
-  list-style: none; /* 목록에 점 없애기 기능*/
-  text-decoration: none; /* 색이랑 및줄 없애기 */
-  /* border-collapse: collapse;   떨어져 있는 선들 합치기 */
+  list-style: none;
+  text-decoration: none;
   margin: 0px;
   padding: 0px;
   color: black;
@@ -31,20 +29,22 @@ h1 {
   font-size: 18px;
   font-weight: bold;
 }
-/* -------------- */
+
+/* --------- */
 
 .intro_bg {
-  background-image: url('./images/intro.png');
+  background-image: url('./images/peter-steiner-JSbb_z5sZEc-unsplash.jpg');
   background-repeat: no-repeat;
   width: 100%;
   height: 718px;
 }
 
 .header {
-  display: flex; /* 가로로 배치 */
-  width: 1280px;
-  margin: auto; /* 가운데로 */
+  display: flex;
+  width: 100%;
   height: 86px;
+  align-items: center;
+  justify-content: center;
 }
 
 .search_area {
@@ -52,7 +52,6 @@ h1 {
   height: 40px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  margin-top: 24px;
 }
 
 .search_area > form > input {
@@ -63,8 +62,8 @@ h1 {
   color: #fff;
   padding-left: 10px;
 }
+
 .search_area > form > span {
-  width: 50px;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
@@ -72,13 +71,13 @@ h1 {
 
 .nav {
   display: flex;
-  justify-content: flex-end; /* 끝으로 옮기기 */
+  justify-content: flex-end;
   line-height: 86px;
-  width: calc(1280px - 300px);
+  width: 800px;
 }
 
 .nav > li {
-  margin-left: 84px;
+  margin: 0 42px;
 }
 
 .nav > li > a {
@@ -87,8 +86,8 @@ h1 {
 
 .intro_text {
   width: 100%;
-  margin: 231px auto 231px auto; /* 글자 세로 가운데로 옮기기 -> 231px 차이가 남 (상-우-좌-하)*/
-  text-align: center; /* 글자 가로 가운데로 옮기기 */
+  margin: 231px auto;
+  text-align: center;
 }
 
 .intro_text > h1,
@@ -98,26 +97,31 @@ h1 {
 
 .amount {
   position: relative;
-  top: -66px; /* 132/2 */
+  top: -66px;
   display: flex;
   width: 1280px;
-  background: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 그림자 좌우(+,-)상하-흐려짐*/
-  margin: auto; /* 가운데 정렬 */
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
 }
+
 .amount > li {
   flex: 1;
   height: 132px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .amount > li > div {
   text-align: center;
-  margin-top: 37px; /* 가운데 옴 */
-  height: 57px;
+  width: 100%;
 }
+
 .amount > li:not(:last-child) > div {
-  /* 마지막 줄 제외하고 gray 줄 넣기 */
   border-right: 1px solid #e1e1e1;
 }
+
 /* main_text0 */
 
 .main_text0 {
@@ -136,33 +140,35 @@ h1 {
   text-align: center;
 }
 
-.icons {
-  display: flex; /* 세분할 하기 위해 */
-  width: 1280px;
-  height: 302px;
-  margin: auto; /* 오른쪽으로 밀어줌 */
-}
-
-.icons > li {
-  flex: 1;
-  background-color: white;
-  margin-top: 49px;
-  height: 302px;
-  text-align: center;
-}
-
 .icons > li > .icon_img {
   margin-top: 36px;
 }
 
-.icons > li:not(:last-child) {
-  margin-right: 20px;
+.icon_img > img {
+  width: 100px;
+  height: 100px;
+}
+
+.icons {
+  display: flex;
+  margin: auto;
+  width: 1280px;
+  height: 350px;
+}
+
+.icons > li {
+  display: block;
+  width: 250px;
+  text-align: center;
+  margin: 49px 10px;
+  width: 100%;
+  height: 302px;
+  background-color: #fff;
 }
 
 .icons .contents2 {
-  width: 270px;
+  width: 250px;
   margin: 10px auto;
-  letter-spacing: -1px;
 }
 
 .more {
@@ -171,11 +177,11 @@ h1 {
   background-color: #2f7af4;
   color: #fff;
   margin: 25px auto;
-  font-size: 12x;
+  font-size: 12px;
   line-height: 30px;
 }
 
-/* main_text1 */
+/* .main_text1 */
 
 .main_text1 {
   width: 100%;
@@ -191,15 +197,19 @@ h1 {
   text-align: center;
 }
 
+.food_photo > img {
+  width: 400px;
+  height: 450px;
+}
+
 .service {
   width: 1280px;
   display: flex;
-  margin: 49px auto; /* 상하 띠움 */
-  height: 427px;
+  margin: 49px auto;
+  justify-content: center;
 }
 
 .service > .contents2 {
-  /* 사진에서 왼쪽 띄워주기 */
   padding: 20px;
 }
 
@@ -208,20 +218,22 @@ h1 {
 }
 
 /* main_text2 */
+
 .main_text2 {
   width: 100%;
   height: 418px;
-  background-image: url(./images/contact.png);
+  background-image: url('./images/peter-steiner-JSbb_z5sZEc-unsplash.jpg');
 }
 
 .main_text2 > ul {
-  display: flex; /* 글자 세로 나열이 -> 가로 나열로 변함 */
-  padding-top: 138px; /* 138px 떨어져 있음 */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .main_text2 > ul > li {
-  flex: 1; /* 가로 나열 분리 (왼 오 나뉨) */
-  text-align: center;
+  flex: 1;
 }
 
 .main_text2 > ul > li > div > h1,

@@ -1,0 +1,10 @@
+/* Theme 스타일 작성 */
+:root {
+  --clr-blue-1: #0096e4;
+  --clr-blue-2: #0074e9;
+  --clr-red-1: #e52330;
+  --clr-green-1: #c7cd1d;
+  --clr-black-1: #181818;
+  --clr-gray-1: #c4c4c4;
+  --clr-white-1: #fff;
+}

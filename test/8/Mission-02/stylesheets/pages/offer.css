@@ -1,0 +1,93 @@
+/* 오늘의 쇼핑 제안 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 250px;
+  display: flex;
+}
+
+h1 {
+  margin: 0 auto 20px;
+  align-self: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.star4_5,
+.star4,
+.star5 {
+  background: url('../../assets/sprites/rating-stars.png') no-repeat;
+  width: 68px;
+  height: 13px;
+}
+
+.star4_5 {
+  background-position: 0 90%;
+}
+
+.star4 {
+  background-position: 0 80%;
+}
+
+.star5 {
+  background-position: 0 100%;
+}
+
+.product {
+  margin: 10px 0 15px;
+  color: var(--color-gray-900);
+}
+
+.freeShiping {
+  color: var(--color-gray-600);
+}
+
+.reviews {
+  font-size: 13px;
+  color: var(--color-gray-600);
+}
+
+.starReview {
+  margin-top: 5px;
+  display: flex;
+}
+
+.container {
+  margin: 20px auto;
+  width: 1100px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > a {
+  position: relative;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+}
+
+.container > a:hover {
+  border: 1px solid tomato;
+  transition: 1s;
+}
+
+.sale {
+  position: absolute;
+  top: -25px;
+  right: 120px;
+  width: 70px;
+  height: 40px;
+  background: tomato;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
