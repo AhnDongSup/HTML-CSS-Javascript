@@ -1,1 +1,164 @@
 /* 카테고리별 추천 광고상품 */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  display: flex;
+  left: 10px;
+  height: 100px;
+}
+
+h1 {
+  align-self: center;
+}
+
+.link_01 {
+  display: flex;
+  align-items: center;
+}
+
+.link_01 > img {
+  margin-left: 3px;
+}
+
+.container {
+  width: 1050px;
+  height: 635px;
+  border-top: 2px solid var(--color-gray-400);
+  border-bottom: 2px solid var(--color-gray-400);
+  display: flex;
+}
+
+.box_01 {
+  width: 32%;
+  position: relative;
+  padding: 20px;
+}
+
+.box_01 > h2 {
+  color: var(--color-brown-200);
+  margin-bottom: 10px;
+}
+
+.hotkeyword > h3 {
+  margin-bottom: 10px;
+}
+
+.hotkeyword {
+  position: absolute;
+  bottom: 20px;
+}
+
+.hotkeyword > a {
+  display: inline-block;
+  border: 1px solid var(--color-gray-500);
+  color: var(--color-brown-400);
+  padding: 7px;
+  margin-top: 8px;
+}
+
+.hotkeyword > a:hover {
+  background-color: var(--color-brown-400);
+  color: #fff;
+}
+
+.box_02 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner_title {
+  width: 250px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-brown-300);
+  color: #fff;
+}
+
+.banner > h4,
+span {
+  margin: 5px;
+}
+
+.symbols {
+  margin-top: 20px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 100;
+  color: var(--color-gray-600);
+}
+.select {
+  color: var(--color-gray-900);
+}
+
+.box_03 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.items {
+  display: flex;
+}
+
+.item {
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+}
+
+.name {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.discount {
+  color: var(--color-red-500);
+  margin-top: 10px;
+}
+
+.price {
+  margin-top: 10px;
+}
+
+.line {
+  width: 500px;
+  height: 2px;
+  background-color: var(--color-gray-400);
+}
+
+.slider-container {
+  display: flex;
+  width: 320px;
+  overflow: hidden;
+}
+
+.slide > img {
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s ease-in-out;
+  transform: translateX(0%);
+}
